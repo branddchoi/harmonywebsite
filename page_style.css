@@ -1,0 +1,59 @@
+@keyframes ani {
+   0% {
+      filter: hue-rotate(0deg);
+   }
+   25% {
+      filter: hue-rotate(90deg);
+   }
+   50% {
+      filter: hue-rotate(180deg);
+   }
+   75% {
+      filter: hue-rotate(270deg);
+   }
+   100% {
+      filter: hue-rotate(360deg);
+   }
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 700px;
+   margin: auto;
+   justify-content: center;
+}
+
+ul {
+   list-style-type: none;
+   gap: 100px;
+}
+.header {
+   margin-top: 60px;
+   font-family: NEON CLUB MUSIC;
+   font-weight: bold;
+   font-size: 60px;
+   padding: 20px;
+   text-align: center;
+   color: #C03939;
+   animation: ani 10s linear infinite;
+}
+
+.description {
+   display: flex;
+   justify-content: center;
+   max-width: 600px;
+   font-family: Menlo;
+   font-size: 20px;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.info {
+   display: flex;
+   justify-content: space-around;
+   font-family: Menlo;
+   font-size: 20px;
+   text-align: center;
+}
