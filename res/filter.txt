@@ -1,0 +1,16 @@
+[0:a]asplit=2[aout][aforvis];
+[aforvis]ahistogram=s=910x320:rate=60:rheight=1:acount=1:ascale=log:scale=lin[vis0];
+[vis0]scale=w=1820:h=320[vis];
+[1:v]hue=H=0[bgframe];
+[bgframe][vis]overlay=x=50:y=H-h-50[v1];
+[0:v]scale=w=854:h=480:force_original_aspect_ratio=decrease[thumbnail];
+[v1][thumbnail]overlay=x=1000:y=200[v2];
+[v2]fps=60[v3];
+[v3]drawtext=fontfile=res/interblackitalic.ttf:fontsize=100:x=80:y=70:text=Harmony Radio:fontcolor=White[v4];
+[v4]drawtext=fontfile=res/interblackitalic.ttf:fontsize=30:x=80:y=210:text=now playing:fontcolor=White[v5];
+[v5]drawtext=fontfile=res/interblackitalic.ttf:fontsize=60:x=80:y=250:textfile=res/context_cur.txt:reload=1:fontcolor=White[v6];
+[v6]drawtext=fontfile=res/interblackitalic.ttf:fontsize=30:x=80:y=500:text=commands:fontcolor=White[v7];
+[v7]drawtext=fontfile=res/interblackitalic.ttf:fontsize=60:x=80:y=540:text=!submit <youtube link>
+!info:fontcolor=White[v8];
+[v8]drawtext=fontfile=res/interblackitalic.ttf:fontsize=30:x=80:y=320:text=coming up:fontcolor=White[v9];
+[v9]drawtext=fontfile=res/interblackitalic.ttf:fontsize=45:x=80:y=360:textfile=res/context_next.txt:reload=1:fontcolor=White[vout]
