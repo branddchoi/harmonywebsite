@@ -24,15 +24,17 @@
       <!-- Create a Twitch.Player object. This will render within the placeholder div -->
       <script type="text/javascript">
       new Twitch.Player("twitch-embed", {
-         height: 500,
-         width: 800,
+         height: 800,
+         weight: 600,
          channel: "realharmonyradio"
       });
       </script>
 
-      <iframe src="https://www.twitch.tv/embed/realharmonyradio/chat?parent=https://branddchoi.github.io/harmonywebsite/">
-         height="500"
-         width="500"
+      <iframe
+         id="chat_embed"
+         src="https://www.twitch.tv/embed/realharmonyradio/chat?parent=https://branddchoi.github.io/harmonywebsite/"
+         height="800"
+         width="400">
       </iframe>
    </div>
 
